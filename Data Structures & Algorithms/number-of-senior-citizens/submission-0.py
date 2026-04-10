@@ -1,0 +1,16 @@
+class Solution:
+    def countSeniors(self, details: List[str]) -> int:
+        ages = []
+        for info in details:
+            sliced = info[11:13]
+            ages.append(int(sliced))
+
+        counter = 0
+        for num in ages:
+            if num>60:
+                counter+=1
+        return counter            
+            
+
+
+        
